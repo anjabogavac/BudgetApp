@@ -1,0 +1,33 @@
+<h1>💰 Budžet App</h1>
+
+<div class="input-section">
+  <input type="text" [(ngModel)]="description" placeholder="Opis transakcije">
+  <input type="number" [(ngModel)]="amount" placeholder="Iznos">
+  <select [(ngModel)]="category">
+    <option *ngFor="let c of categories" [value]="c">{{c}}</option>
+  </select>
+  <button (click)="addTransaction()">Dodaj</button>
+</div>
+
+<h2>📜 Transakcije</h2>
+<div class="transactions">
+  <div *ngFor="let t of transactions" class="transaction-card" [ngClass]="t.category.toLowerCase()">
+    <div>
+      <strong>{{ t.description }}</strong> <br>
+      <small>{{ t.date | date:'short' }}</small>
+    </div>
+    <div class="amount">
+      {{ t.amount }} RSD
+    </div>
+    <div class="category">{{ t.category }}</div>
+    <button class="delete-btn" (click)="deleteTransaction(t.id)">❌</button>
+  </div>
+</div>
+
+<h2>📊 Ukupno</h2>
+<div class="totals">
+  <div *ngFor="let c of categories" class="total-card" [ngClass]="c.toLowerCase()">
+    {{ c }}: <strong>{{ getTotal(c) }}</strong> RSD
+  </div>
+</div>
+
