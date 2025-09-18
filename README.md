@@ -36,37 +36,38 @@ cd BudgetApp
 npm install
 
 
-## Pokretanje aplikacije
+Pokretanje aplikacije
 
-Pokreni lokalni development server komandom:
+Pokreni lokalni development server:
 
-```bash
 ng serve
-Kada se server pokrene, otvori pregledač i idi na adresu:http://localhost:4200/
-Aplikacija će se automatski ponovo učitati svaki put kada izmeniš neki od izvornog fajlova.
 
----
 
-## Tehnologije
+Zatim otvori pregledač i idi na: http://localhost:4200/
+
+Aplikacija će se automatski osvežavati svaki put kada izmeniš neki od izvornog fajlova.
+
+Tehnologije
 
 Angular CLI v20.1.6
+
 Firebase Realtime Database
+
 TypeScript
+
 Visual Studio Code
 
----
+Firebase Integracija
 
-## Firebase Integracija
+Aplikacija je povezana sa Firebase Realtime Database, što omogućava:
 
-Aplikacija je povezana sa **Firebase Realtime Database**, što omogućava:
+Automatsku sinhronizaciju podataka u realnom vremenu
 
-- Automatsku sinhronizaciju podataka u realnom vremenu  
-- Čuvanje prihoda, rashoda i investicija svakog korisnika  
-- Brz i jednostavan pristup podacima sa više uređaja
+Čuvanje prihoda, rashoda i investicija svakog korisnika
+
+Brz i jednostavan pristup podacima sa više uređaja
 
 Konfiguracija Firebase-a je već uključena u projektu, tako da je aplikacija spremna za pokretanje bez dodatnog podešavanja baze.
-
----
 
 ##  Autori
 Anastasija Bogavac <anjabogavac123@gmail.com>
