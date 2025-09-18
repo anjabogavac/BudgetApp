@@ -1,59 +1,95 @@
-# BudgetApp
+#  BudgetApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.6.
+BudgetApp je mobilna/web aplikacija za planiranje i praćenje budžeta, razvijena pomoću **Angular** frameworka.  
+Omogućava korisnicima da dodaju, prate i brišu prihode, rashode i investicije.  
+Podaci se čuvaju i sinhronizuju putem **Firebase Realtime Database**.
 
-## Development server
+---
 
-To start a local development server, run:
+##  Funkcionalnosti
+
+- Login i registracija korisnika  
+- Dodavanje novih stavki (prihodi, rashodi, investicije)  
+- Pregled svih unetih stavki sa nazivom, iznosom i kategorijom  
+- Automatski prikaz ukupnog iznosa  
+- Brisanje stavki (CRUD operacije)  
+- Sinhronizacija sa **Firebase Realtime Database**  
+- GitHub repozitorijum 
+
+---
+## Instalacija 
+
+1. **Instaliraj Node.js i npm**  
+   Preuzmi i instaliraj sa [https://nodejs.org/](https://nodejs.org/).  
+
+2. **Instaliraj Angular CLI globalno**  
+   Otvori terminal i pokreni:
+   ```bash
+   npm install -g @angular/cli
+3.**Kloniraj repozitorijum**
+
+git clone <https://github.com/anjabogavac/BudgetApp.git>
+cd BudgetApp
+
+4.** Instaliraj zavisnosti projekta **
+
+npm install
+
+
+## Pokretanje aplikacije
+
+Pokreni lokalni development server komandom:
 
 ```bash
 ng serve
-```
+Kada se server pokrene, otvori pregledač i idi na adresu:http://localhost:4200/
+Aplikacija će se automatski ponovo učitati svaki put kada izmeniš neki od izvornog fajlova.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Tehnologije
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Angular CLI v20.1.6
+Firebase Realtime Database
+TypeScript
+Visual Studio Code
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Firebase Integracija
 
-```bash
-ng generate --help
-```
+Aplikacija je povezana sa **Firebase Realtime Database**, što omogućava:
 
-## Building
+- Automatsku sinhronizaciju podataka u realnom vremenu  
+- Čuvanje prihoda, rashoda i investicija svakog korisnika  
+- Brz i jednostavan pristup podacima sa više uređaja
 
-To build the project run:
+Konfiguracija Firebase-a je već uključena u projektu, tako da je aplikacija spremna za pokretanje bez dodatnog podešavanja baze.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+##  Autori
+Anastasija Bogavac <anjabogavac123@gmail.com>
+Ivana Andjelic <ivana_andjelic02@icloud.com>
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Planovi za budućnost
 
-```bash
-ng test
-```
+- Dodavanje grafikona za vizualizaciju budžeta
+- Eksport podataka u CSV/PDF
+- Push notifikacije za podsjetnike
+- Naprednija autentifikacija korisnika
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## Licence
 
-```bash
-ng e2e
-```
+Ovaj projekat je objavljen pod **MIT licencom**.
+ To znači da ga možeš slobodno koristiti, modifikovati i distribuirati, uključujući u komercijalne svrhe, uz zadržavanje originalnih autora i licence.  
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+**Autori:** Anastasija Bogavac & Ivana Andjelic  
+**Godina:** 2025
 
-## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
