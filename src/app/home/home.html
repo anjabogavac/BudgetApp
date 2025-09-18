@@ -1,3 +1,4 @@
+<!--Ivana-->
 <h1>💰 Budžet App</h1>
 
 <div class="input-section">
@@ -9,7 +10,7 @@
   <button (click)="addTransaction()">Dodaj</button>
 </div>
 
-<h2>📜 Transakcije</h2>
+<h2>📜 Transakcije </h2>
 <div class="transactions">
   <div *ngFor="let t of transactions" class="transaction-card" [ngClass]="t.category.toLowerCase()">
     <div>
